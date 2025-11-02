@@ -288,6 +288,69 @@ nav a{
   font: size 0.75em;
   margin-right:5px;
 }
+/* Certifications Section */
+#certifications {
+  margin-top: 40px;
+  animation: fadeIn 1s ease;
+}
+
+/* Container layout */
+.certificate-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 25px;            /* ✅ adds space between boxes */
+  padding: 10px 0;      /* ✅ adds space inside the section */
+}
+
+/* Box (card) style */
+.certificate {
+  background-color: #1e1e1e;
+  border: 2px solid #3a3a3a;
+  border-radius: 12px;
+  text-align: center;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.certificate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Logo style */
+.cert-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Text style */
+.certificate h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.certificate p {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  margin: 5px 0;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
 @media screen and (max-width:1200px) {
     .main-container{
         grid-template-columns: 1fr;
