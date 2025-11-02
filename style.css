@@ -346,10 +346,16 @@ nav a{
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+.certificate a {
+  color: #a0a0a0; /* normal link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-
-
-
+.certificate a:hover {
+  color: #1e90ff; /* lighter blue on hover */
+  text-decoration: underline;
+}
 
 @media screen and (max-width:1200px) {
     .main-container{
