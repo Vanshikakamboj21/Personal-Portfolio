@@ -313,6 +313,18 @@ nav a{
   color: #a0a0a0;        
   text-decoration: none;   
 }
+.card .git {
+  color: #ffbf00;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.card .git:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
 
 @media screen and (max-width:750px) {
     .project-container{
